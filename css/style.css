@@ -1,0 +1,508 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+/* layout */
+.wrap{
+    width: 1024px;
+    margin: 0 auto;
+}
+.header{
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 32px 35px 32px 40px;
+    position: absolute;
+    top: 0%;
+    width: 1024px;
+    z-index: 100;
+}
+.header h1 a{
+    display: block;
+    background-image: url(https://upload.cc/i1/2020/12/10/jfiwJ2.png);
+    text-indent: 120%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 182px;
+    height: 36px;
+}
+.header ul{
+    display: flex;
+}
+.header a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0 25px 34px 25px;
+}
+.header ul a:hover{
+    color: #00cc99;
+    border-bottom: 8px solid #00cc99;
+}
+.footer{
+    background: #323228;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 38px 30px 38px 40px;
+}
+.footer h2 a{
+    display: block;
+    background-image: url(https://upload.cc/i1/2020/12/10/jfiwJ2.png);
+    text-indent: 120%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 182px;
+    height: 36px;
+}
+.footer p{
+    padding: 6px 0 0 32px;
+    color: #9b9b9b;
+}
+.fansicon ul{
+    display: flex;
+}
+.fansicon li{
+    padding: 10px;
+}
+.fansicon a{
+    display: block;
+}
+/* home */
+.homebanner{
+    background-image: url(https://upload.cc/i1/2020/12/12/sfkmix.png);
+    height: 560px;
+}
+.homebanner h2{
+    padding: 184px 0 62px 40px;
+    font-size: 48px;
+    line-height: 84px;
+    color: #00cc99;
+}
+.homebanner span{
+    color: #ffffff;
+}
+.homebanner a{
+    text-decoration: none;
+    background: #00cc99;
+    color: #ffffff;
+    font-size: 20px;
+    padding:17px 36px 17px 40px ;
+    margin-left: 40px;
+    border-radius: 5px;
+}
+.homebanner a:hover{
+    color: black;
+    font-weight: bolder;
+}
+.homecontent{
+    padding: 60px 0;
+}
+.homecontent .tittle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.homecontent h2{
+    color: #00cc99;
+    font-size: 34px;
+    padding: 0 44px;
+}
+.homecontent span{
+    color:#9b9b9b;
+    font-size: 20px;
+}
+.homecontent .tittle a{
+    border: 2px solid #00cc99;
+    border-radius: 3px;
+    color: #00cc99;
+    text-decoration: none;
+    padding: 6px 15px;
+    display: block;
+    margin-right: 44px;
+}
+.homecontent .tittle a:hover{
+    color: #9b9b9b;
+    border-color: #9b9b9b;
+}
+.homecontent ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding:32px 34px 60px 34px
+}
+.homecontent li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 5px silver;
+    margin:0 10px;
+    padding: 26px 22px 30px 16px;
+}
+.homecontent h3{
+    font-size: 18px;
+    padding: 14px 0 18px 0;
+}
+.homecontent p{
+    color: #9b9b9b;
+    line-height: 26px;
+}
+.homecontent table{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 33px;
+    width: 943px;
+}
+.homecontent thead{
+    background: #ebebeb;
+}
+.homecontent th{
+    padding: 20px 0;
+}
+.homecontent td{
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding: 20px 0;
+}
+.homecontent table span{
+    font-size: 16px;
+    color: #00cc99;
+}
+.studentdata{
+    display: flex;
+    justify-content: space-around;
+    background: #ebebeb;
+    align-items: center;
+}
+.studentdata h4{
+    font-size: 28px;
+    line-height: 66px;
+    padding: 158px 108px 154px 44px;
+}
+.studentdata form{
+    padding: 150px 44px 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.studentdata input{
+    width: 462px;
+    font-size: 22px;
+    padding: 18px 22px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+}
+.studentdata .homesend{
+    width: 142px;
+    background: #00cc99;
+    color: #ffffff;
+    align-self: flex-end;
+    cursor: pointer;
+}
+.studentdata .homesend:hover{
+    color:black;
+    font-weight: bolder;
+}
+/* course */
+.coursebanner{
+    background-image: url(https://upload.cc/i1/2020/12/12/PzAuwK.png);
+    height: 560px;
+    display: flex;
+    justify-content: space-between;
+}
+.coursebanner h2{
+    color: #ffffff;
+    font-size: 46px;
+    padding: 188px 0 60px 38px;
+}
+.coursebanner span{
+    color: #00cc99;
+    font-size: 24px;
+}
+.coursebanner a{
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 18px 36px 18px 40px;
+    background: #00cc99;
+    border-radius: 5px;
+    margin-left: 38px;
+}
+.coursebanner a:hover{
+    color: black;
+    font-weight: bolder;
+}
+.coursebannerimg{
+    padding: 118px 58px 0 0;
+}
+.coursebannerimg img{
+    margin-left: 20px;
+}
+.coursecontent{
+    padding: 60px 202px 0 202px;
+}
+.teacher{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.coursecontent .teacher h2{
+    font-size: 34px;
+    line-height: 52px;
+}
+.coursecontent .teacher span{
+    color: #00cc99;
+    font-size: 34px;
+}
+.coursecontent .teacher ul{
+    color: #9b9b9b;
+    list-style-position: outside;
+    list-style-type:disc;
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 36px;
+}
+.coursecontent h3{
+    font-size: 36px;
+    color: #00cc99;
+}
+.coursecontent span{
+    font-size: 20px;
+    color: #9b9b9b;
+}
+.number{
+    list-style-position: outside;
+    list-style-type:decimal;
+    line-height: 1.5;
+    padding: 30px 0 60px 20px;
+}
+.number li{
+    padding-left: 24px;
+}
+.mainpoint{
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.mainpoint li{
+    padding: 20px 0 16px 38px
+}
+.mainpoint .graybg{
+    background: #ebebeb;
+}
+.registered{
+    background: #ebebeb;
+    position: relative;
+}
+.registered a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    background: #00cc99;
+    padding: 18px 34px 16px 40px;
+    border-radius: 5px;
+    position: absolute;
+    right: 202px;
+    bottom: 155px;
+}
+.registered a:hover{
+    color: black;
+    font-weight: bolder;
+}
+.registered h4{
+    font-size: 28px;
+    line-height: 60px;
+    padding: 158px 65px 152px 202px;
+}
+/* fqa */
+.fqabanner{
+    background-image: url(https://upload.cc/i1/2020/12/12/7No6OR.png);
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.fqabanner h2{
+    font-size: 42px;
+    color: #ffffff;
+    padding-top: 187px;
+}
+.fqabanner span{
+    font-size: 24px;
+    color: #00cc99;
+}
+.fqabanner form{
+    margin-top: 52px;
+}
+.fqabanner form{
+    display: flex;
+}
+.fqabanner input{
+    font-size: 22px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 570px;
+    outline: none;
+}
+.fqabanner .fqasearch{
+    background: #ffffff;
+    width: 58px;
+    margin-left: -10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.fqasearch:hover{
+    cursor: pointer;
+}
+.fqasearch img{
+    width: 28px;
+    height: 28px;
+}
+.fqacontent{
+    padding: 38px 134px 22px 124px;
+}
+.fqacontent h2{
+    font-size: 32px;
+    color: #00cc99;
+    padding: 22px 0 38px 0;
+}
+.fqacontent .tittle{
+    font-size: 20px;
+    color: #9b9b9b;
+}
+.fqacontent p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 38px;
+}
+.answer{
+    font-size: 14px;
+    color: #9b9b9b;
+    line-height: 24px;
+}
+.fqanumber{
+    font-size: 14px;
+    color: #9b9b9b;
+    line-height: 24px;
+    padding: 0 38px;
+    margin-top: -38px;
+    list-style-type:decimal	;
+}
+.ulanswer{
+    padding-left: 38px;
+    font-size: 14px;
+    color: #9b9b9b;
+    line-height: 24px;
+    padding: 0 38px;
+    margin-top: -38px;
+    list-style-type:disc;
+    list-style-position:inside;
+}
+.littletext{
+    font-size: 16px;
+    line-height: 24px;
+}
+.fqacontent a{
+    color: #00cc99;
+    text-decoration: none;
+    padding: 20px 5px;
+}
+.fqacontent a:hover{
+    color:blue;
+}
+.fqaform{
+    background: #ebebeb;
+    display: flex;
+    align-items: center;
+}
+.fqaform h2{
+    font-size: 28px;
+    line-height: 58px;
+    padding: 136px 160px 372px 40px;
+}
+.fqaform form{
+    display: flex;
+    flex-direction: column;
+    margin: 120px 42px 60px 0;
+}
+.fqaformcontent{
+    width: 460px;
+    height: 204px;
+    border: none;
+    border-radius: 5px;
+    padding: 18px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.fqaform input{
+    border: none;
+    border-radius: 5px;
+    padding: 18px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.fqasend{
+    align-self: flex-end;
+    background: #00cc99;
+    color: #ffffff;
+    width: 142px;
+}
+.fqasend:hover{
+    cursor: pointer;
+    color: black;
+    font-weight: bolder;
+}
